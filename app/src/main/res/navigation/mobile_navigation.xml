@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.applicationtest_two.room.RecyclerViewFragment"
+        android:label="记事本"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_noteAddActivity"
+            app:destination="@id/noteAddActivity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/noteAddActivity"
+        android:name="com.example.applicationtest_two.room.NoteAddActivity"
+        android:label="NoteAddActivity" />
+
+    <fragment android:id="@+id/navigation_add"
+        android:label=""
+        android:name="com.example.applicationtest_two.room.NoteAddFragment"
+        tools:layout="@layout/activity_note_add" />
+
+
+</navigation>

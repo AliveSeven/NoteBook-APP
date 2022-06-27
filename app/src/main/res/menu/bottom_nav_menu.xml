@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="记事本" />
+    <!-- id必须与导航图mobile_navigation.xml中对应节点（fragment）的id一致（相同） -->
+    <item
+        android:id="@+id/navigation_add"
+        android:icon="@drawable/baseline_table_rows_red_800_24dp"
+        android:title="增加记录" />
+
+</menu>
